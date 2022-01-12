@@ -2,13 +2,7 @@
 
 echo 'Installs & add PHP configuration setup'
 
-echo "Installing PHP & it's packages"
-PACKAGES=(
-    php
-)
-
-echo "Installing packages..."
-brew install ${PACKAGES[@]}
+brew bundle --file PHPBrewfile
 
 echo "Cleaning up..."
 brew cleanup

@@ -15,33 +15,15 @@ brew update
 echo 'Upgrading brew packages'
 brew upgrade
 
-PACKAGES=(
-    git
-)
-
-echo "Installing packages..."
-brew install ${PACKAGES[@]}
-
-echo "Cleaning up..."
-brew cleanup
-
 echo 'Installing Rosetta 2'
 # Dependacy for Microsoft Teams
 sudo softwareupdate --install-rosetta
 
-echo "Installing cask..."
-CASKS=(
-    google-chrome
-    microsoft-teams
-    slack
-    spotify
-    iterm2
-    visual-studio-code
-    docker
-)
+# Install everything from Brewfile
+brew bundle
 
-echo "Installing cask apps..."
-brew install --cask ${CASKS[@]}
+echo "Cleaning up..."
+brew cleanup
 
 echo "Creating folder structure..."
 # create development directory

@@ -2,12 +2,7 @@
 
 echo 'Install Go'
 
-PACKAGES=(
-    go
-)
-
-echo "Installing packages..."
-brew install ${PACKAGES[@]}
+brew bundle --file GoBrewfile
 
 echo "Cleaning up..."
 brew cleanup
