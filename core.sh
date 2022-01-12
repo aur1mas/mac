@@ -9,11 +9,14 @@ if test ! $(which brew); then
 fi
 
 # Update homebrew recipes
+echo 'Updating Brew'
 brew update
+
+echo 'Upgrading brew packages'
+brew upgrade
 
 PACKAGES=(
     git
-    php
 )
 
 echo "Installing packages..."
@@ -22,13 +25,18 @@ brew install ${PACKAGES[@]}
 echo "Cleaning up..."
 brew cleanup
 
+echo 'Installing Rosetta 2'
+# Dependacy for Microsoft Teams
+sudo softwareupdate --install-rosetta
+
 echo "Installing cask..."
 CASKS=(
-    iterm2
+    google-chrome
+    microsoft-teams
     slack
     spotify
+    iterm2
     visual-studio-code
-    google-chrome
     docker
 )
 
@@ -38,9 +46,5 @@ brew install --cask ${CASKS[@]}
 echo "Creating folder structure..."
 # create development directory
 [[ ! -d ~/dev ]] && mkdir ~/dev
-
-echo "Installing VSCode extensions"
-code --install-extension bmewburn.vscode-intelephense-client
-code --install-extension mblode.twig-language-2
 
 echo "Bootstrapping complete"
