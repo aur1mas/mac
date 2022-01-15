@@ -4,6 +4,7 @@ brew "git"
 brew "wifi-password"
 
 # generic software
+cask "setapp"
 cask "google-chrome"
 cask "spotify"
 cask "nordpass"
@@ -13,6 +14,7 @@ cask "grammarly"
 cask "zoom"
 cask "slack"
 cask "microsoft-teams"
+cask "messenger"
 
 # development
 cask "iterm2"
