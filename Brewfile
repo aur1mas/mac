@@ -6,10 +6,13 @@ brew "wifi-password"
 # generic software
 cask "google-chrome"
 cask "spotify"
-cask "slack"
-cask "microsoft-teams"
 cask "nordpass"
 cask "grammarly"
+
+# communication
+cask "zoom"
+cask "slack"
+cask "microsoft-teams"
 
 # development
 cask "iterm2"
