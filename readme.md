@@ -30,6 +30,12 @@ Only essential software:
 sh -c "$(curl -fsSL https://raw.github.com/aur1mas/mac/master/core.sh)"
 ```
 
+## Aditional Software
+
+Additional Software I use which (at given moment) couldn't be installed via Brew:
+
+- [Craft](https://www.craft.do/)
+
 ## Contribute
 
 Use this repository as a guidance for your setup. I strongly recommend forking it & configuring by your needs.

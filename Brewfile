@@ -9,6 +9,7 @@ cask "google-chrome"
 cask "spotify"
 cask "nordpass"
 cask "grammarly"
+cask "google-drive"
 
 # communication
 cask "zoom"
