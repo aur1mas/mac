@@ -36,6 +36,12 @@ Additional Software I use which (at given moment) couldn't be installed via Brew
 
 - [Craft](https://www.craft.do/)
 
+Apps which I install via Setapp:
+
+- TablePlus - SQL editor;
+- Bartender - manage menu bar icons;
+- Be Focused - Pomodoro Timer;
+
 ## Contribute
 
 Use this repository as a guidance for your setup. I strongly recommend forking it & configuring by your needs.

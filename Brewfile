@@ -16,6 +16,7 @@ cask "zoom"
 cask "slack"
 cask "microsoft-teams"
 cask "messenger"
+cask "skype"
 
 # development
 cask "iterm2"
