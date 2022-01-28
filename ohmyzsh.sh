@@ -15,7 +15,7 @@ echo "g will be alias for git"
 echo "alias g=git" >> ~/.zshrc
 
 echo 'dc alias for docker compose'
-echo "alias dc=docker compose" >> ~/.zshrc
+echo "alias dc=\"docker compose\"" >> ~/.zshrc
 
 echo 'b for brew'
 echo "alias b=brew" >> ~/.zshrc
